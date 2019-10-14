@@ -62,7 +62,7 @@
             </b-table>
         <!-- flating button -->
         <div class="btn-float">
-            <a class="float" >
+            <router-link to="/new" class="float" >
                 <b-icon class="my-float"
                     pack="fas"
                     icon="plus"
@@ -70,7 +70,7 @@
                     type="is-light">
                 </b-icon>
 
-            </a>
+            </router-link>
            
 
         </div>
@@ -88,7 +88,7 @@ export default {
         }
     },
     created() {
-        db.collection("employees").orderBy('dept').get().then((querySnapshot) => {
+        db.collection("employees").orderBy('employee_id').get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 const  data = {
                     'id' : doc.id,

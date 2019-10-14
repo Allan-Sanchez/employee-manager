@@ -38,13 +38,13 @@
                 <!-- buttons -->
                 <div class="">
                   <div class="buttons is-flex is-horizontal-center">
-                   <a class="button is-primary is-rounded is-block">
+                   <router-link :to="{name:'edit-employee', params:{employee_id : employee_id }}" class="button is-primary is-rounded is-block">
                      <b-icon style="margin: 0px 5px 0px 0px"
                           pack="fas"
                           icon="edit"
                           size="is-small">
                       </b-icon>Edit
-                   </a>
+                   </router-link>
                       <button class="button is-danger is-rounded" @click="alertCustomError">
                         <b-icon style="margin: 0px 5px 0px 0px"
                             pack="fas"
@@ -61,7 +61,6 @@
           </div>
         </div>
     </div>
-
     
 </template>
 
@@ -120,7 +119,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped >
 .is-horizontal-center{
 justify-content: center;
 align-items: center;

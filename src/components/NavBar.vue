@@ -13,19 +13,16 @@
             <b-navbar-item tag="router-link" :to="{ path: '/new' }">
                 New
             </b-navbar-item>
-            <b-navbar-item href="#">
-                About
-            </b-navbar-item>
         </template>
 
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-info">
+                    <a class="button is-light is-outlined" >
                         <strong>Sign up</strong>
                     </a>
-                    <a class="button is-light">
-                        Log in
+                    <a class="button is-light is-outlined">
+                        <strong>Log in</strong>
                     </a>
                 </div>
             </b-navbar-item>
