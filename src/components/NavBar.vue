@@ -3,7 +3,7 @@
         <template slot="brand">
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 <img
-                    src="../../public/employee.png"
+                    src="https://res.cloudinary.com/dx9n8tsyu/image/upload/v1571179436/employee_bbodqj.png"
                     alt="Employees"
                 >
                 <h1 class="is-size-4" style="margin-left:10px">Employees Manager</h1>

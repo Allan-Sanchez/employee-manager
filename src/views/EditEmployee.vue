@@ -9,7 +9,7 @@
                 <form @submit.prevent="editEmployee">
                     <div class="card-image is-flex is-horizontal-center">
                       <figure class="image is-128x128">
-                        <img src="../../public/photo.jpg" alt="Placeholder image">
+                        <img src="https://res.cloudinary.com/dx9n8tsyu/image/upload/v1571179377/photo_qcal36.jpg" alt="Placeholder image">
                       </figure>
                     </div>
 
