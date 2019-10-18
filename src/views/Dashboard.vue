@@ -80,7 +80,7 @@
 <script>
   import db from '../components/firebaseInit'; 
 export default {
-    nama:'dashboard',
+    name:'dashboard',
     data() {
         return {
             employees:[],

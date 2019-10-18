@@ -10,20 +10,23 @@
             </b-navbar-item>
         </template>
         <template slot="start">
-            <b-navbar-item tag="router-link" :to="{ path: '/new' }">
+            <!-- <b-navbar-item tag="router-link" :to="{ path: '/new' }">
                 New
-            </b-navbar-item>
+            </b-navbar-item> -->
         </template>
 
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-light is-outlined" >
+                    <router-link to="/singUp" class="button is-primary is-inverted" >
                         <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light is-outlined">
+                    </router-link>
+                    <router-link to="/login" class="button is-primary is-inverted">
                         <strong>Log in</strong>
-                    </a>
+                    </router-link>
+                    <button @click="logout()" class="button is-primary is-inverted">
+                        <strong>Logout</strong>
+                    </button>
                 </div>
             </b-navbar-item>
         </template>
@@ -31,11 +34,21 @@
 </template>
 
 <script>
+import firebase from 'firebase';
 
 export default {
     data() {
         return {
-            isOpen: false
+            isOpen: false,
+            isLoggedIn:false,
+            currentUser:false
+        }
+    },
+    methods: {
+        logout(){
+            firebase.auth().signOut().then(() => {
+                this.$router.push('login');
+            })
         }
     },
 }

@@ -67,7 +67,7 @@
 <script>
   import db from '@/components/firebaseInit'; 
 export default {
-    nama:'view-employee',
+    name:'view-employee',
     data() {
         return {
             employee_id : null,
