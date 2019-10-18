@@ -57,13 +57,13 @@
                               size="is-small">
                           </b-icon>Send
                        </button>
-                          <router-link to="/" class="button is-danger is-rounded">
+                          <router-link to="/singUp" class="button is-success is-rounded">
                             <b-icon style="margin: 0px 5px 0px 0px"
                                 pack="fas"
-                                icon="times"
+                                icon="user-plus"
                                 size="is-small">
                             </b-icon>
-                              Cancel
+                              Sing up
                           </router-link>
                       </div>
                     </div>
